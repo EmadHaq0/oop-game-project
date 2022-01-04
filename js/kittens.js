@@ -123,7 +123,7 @@ class Engine {
             enemySpot = Math.floor(Math.random() * enemySpots);
         }
 
-        this.enemies[enemySpot] = new Enemy(enemySpot * ENEMY_WIDTH);
+        this.enemies[enemySpot] = new Enemy((enemySpot - 1) * ENEMY_WIDTH);
     }
 
     // This method kicks off the game
